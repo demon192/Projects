@@ -1,0 +1,20 @@
+.navbar__get_started {
+    width: 168px;
+    position: absolute;
+    right: 144px;
+    height: 47px;
+    display: grid;
+    place-items: center;
+    background: rgb(199, 234, 244);
+    border-radius: 23px;
+}
+
+.navbar__get_started__link {
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+}
+
+.navbar__get_started__link:hover {
+    color: white;
+}

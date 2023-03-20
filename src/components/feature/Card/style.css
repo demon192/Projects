@@ -1,0 +1,25 @@
+.top {
+    display: flex;
+    gap: 22px;
+}
+
+.main__top__card {
+    padding: 25px;
+    width: 225px;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.main__top__card__heading {
+    color: #2f3891;
+}
+
+.main__top__card__list {
+    font-size: 13px;
+    margin-top: 10px;
+    list-style: none;
+    font-weight: 500;
+    color: #575757;
+}

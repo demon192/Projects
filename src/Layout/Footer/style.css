@@ -1,0 +1,46 @@
+.main__top {
+    background: url('../../../public/assets/svg/footer_background.svg');
+    height: 493px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 22px;
+    padding: 65px 27px;
+    width: 100%;
+}
+
+.main__top__card1 {
+    background-color: white;
+    height: 149px;
+    border-radius: 10px;
+    width: 358px;
+    padding: 20px 0px 0px 21px;
+}
+
+.main__top__card1__logo {
+    display: block;
+    width: 124px;
+}
+
+.main__top__card1__social_icons {
+    display: flex;
+    gap: 7px;
+    margin-top: 6px;
+    width: 30px;
+}
+
+
+.main__bottom {
+    height: 60px;
+    padding: 0px 40px;
+    background-color: #000531;
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    font-size: 12px;
+    color: grey;
+}
+
+.main__top__card__list__items {
+    padding-bottom: 10px;
+}
