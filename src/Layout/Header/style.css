@@ -1,5 +1,5 @@
 .navbar {
-    background: url('../../../public/assets/png/bg.webp');
+    /* background: url('../../../public/assets/png/bg.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -8,7 +8,12 @@
     display: flex;
     gap: 155px;
     position: fixed;
-    background-color: white;
+    /* background-color: white; */
+    margin-top: 0px;
+}
+
+.navbar.active {
+    background: white;
 }
 
 .navbar__logo__img {
@@ -30,6 +35,7 @@
 
 .navbar__dropdown__list__item {
     cursor: pointer;
+    color: brown;
 }
 
 .navbar__dropdown__list__item .drop_list {
@@ -47,10 +53,34 @@
 }
 
 .navbar__dropdown__list__item:hover {
-    color: blue;
+    color: white;
+    background-color: coral;
+    font-size: large;
 }
 
 .navbar__dropdown__list__item:hover .drop_list {
     color: black;
     display: block;
+}
+
+link:active {
+    color: blue;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: large;
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar__dropdown__list a.active {
+    background-color: coral;
+    font-size: large;
+    text-decoration: none;
 }

@@ -1,7 +1,7 @@
-import './style.css';
 import Card from '../../components/feature/Card';
+import './style.css';
 
-function Footer() {
+const Footer = () => {
     return (
         <div className="main">
             <div className="main__top">

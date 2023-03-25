@@ -1,6 +1,7 @@
 import './style.css';
+import Input from '../../common/Input';
 
-function ContactForm() {
+const ContactForm = () => {
     return (
         <div className="wrapper">
             <div className="wrapper__top">
@@ -37,26 +38,12 @@ function ContactForm() {
                         <div className="left">
                             <div>
                                 <label htmlFor="name" className="left__label">Your Name</label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    id="name"
-                                    placeholder="Minimum 4 Characters (only alphabets)"
-                                    minLength={4}
-                                    className="left__input"
-                                />
+                                <Input placeholder="Minimum 4 Characters (only alphabets)" />
                             </div>
                             <div>
                                 <label htmlFor="org_name" className="left__label"
                                 >Organization Name</label>
-                                <input
-                                    type="text"
-                                    name="org_name"
-                                    id="org_name"
-                                    placeholder="Minimum 2 Characters (only alphanumeric)"
-                                    minLength={2}
-                                    className="left__input"
-                                />
+                                <Input placeholder='Minimum 2 Characters (only alphanumeric)' />
                             </div>
                             <div>
                                 <label htmlFor="message" className="left__label">Message</label>
@@ -73,25 +60,13 @@ function ContactForm() {
                             <button type="submit" className="left__send_msg">SEND MESSAGE</button>
                         </div>
                         <div className="right">
-                            <div>
+                            <div className='right__div'>
                                 <label htmlFor="number" className="right__label">Your Number</label><br />
-                                <input
-                                    type="number"
-                                    name="number"
-                                    id="number"
-                                    placeholder="Minimum 10 digits"
-                                    minLength={10}
-                                    className="right__input" />
+                                <Input placeholder='Minimum 10 digits' />
                             </div>
-                            <div>
+                            <div className='right__div'>
                                 <label htmlFor="email" className="right__label">Email Id</label><br />
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Localpart@domain"
-                                    className="right__input"
-                                />
+                                <Input placeholder='Localpart@domain' />
                             </div>
                             <div className="right__captcha">
                                 <input

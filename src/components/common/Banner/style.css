@@ -1,5 +1,10 @@
 .banner {
-    height: 1000px;
     width: 100%;
-    margin-top: 121px;
+    height: 110rem;
+    /* background: url(http://localhost:3000/static/media/body.f0b14be….png); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    padding-top: 0;
+    margin-top: 0;
+
 }

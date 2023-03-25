@@ -1,0 +1,13 @@
+.reviewPage {
+    padding: 121px 0px;
+    background: cornsilk;
+}
+
+.reviewList {
+    list-style: none;
+    padding: 50px 50px 0px;
+}
+
+.reviews {
+    padding-bottom: 15px;
+}

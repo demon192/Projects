@@ -1,6 +1,6 @@
 import './style.css'
 
-function Card() {
+const Card = () => {
     return (
         <div className='top'>
             <div className="main__top__card">

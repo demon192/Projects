@@ -1,9 +1,13 @@
 import './style.css'
 
-function Banner() {
+type bannerProps = {
+    src: string,
+}
+
+const Banner = (prop: bannerProps) => {
     return (
         <div >
-            <img src="/assets/jpg/banner.jpeg" alt="banner" className='banner' />
+            <img src={prop.src} alt="banner" className='banner' style={{ height: '90rem' }} />
         </div>
     )
 }

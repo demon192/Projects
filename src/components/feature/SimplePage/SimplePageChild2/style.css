@@ -1,0 +1,9 @@
+.child2 {
+    height: 44.5vh;
+    display: grid;
+    place-content: center;
+}
+
+.child2 h2 {
+    color: white;
+}

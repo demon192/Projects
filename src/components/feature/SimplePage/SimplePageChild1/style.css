@@ -1,0 +1,27 @@
+.Child1 {
+    display: flex;
+    place-content: center;
+    height: 50vh;
+    gap: 100px;
+    place-items: center;
+    background: antiquewhite;
+}
+
+.Child1 button {
+    height: fit-content;
+    padding: 30px;
+    border: 2px solid rosybrown;
+    border-radius: 42px;
+    font-weight: 600;
+    font-size: larger;
+    cursor: pointer;
+    color: darkgoldenrod;
+}
+
+.Child1 input {
+    padding: 30px;
+    width: 550px;
+    border-radius: 12px;
+    border: 1px solid burlywood;
+    outline: none;
+}

@@ -1,0 +1,31 @@
+.apiData {
+    background: beige;
+    padding: 121px 0px 25px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    gap: 0;
+    place-content: space-evenly;
+    row-gap: 25px;
+}
+
+.card {
+    width: fit-content;
+}
+
+a:hover {
+    color: red;
+    font-size: medium;
+}
+
+.pagination {
+    display: flex;
+    width: 97vw;
+    justify-content: center;
+}
+
+.pagination button {
+    margin: 0px 30px;
+    width: 75px;
+    background: aquamarine;
+    cursor: pointer;
+}
