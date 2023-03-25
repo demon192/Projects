@@ -5,7 +5,7 @@ import Layout from './Layout';
 
 
 import AppRouter from './router/AppRouter';
-import { store } from './store';
+import { store } from './redux/store';
 
 const App = () => {
   return (
