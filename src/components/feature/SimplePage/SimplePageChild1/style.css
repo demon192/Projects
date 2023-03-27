@@ -7,7 +7,7 @@
     background: antiquewhite;
 }
 
-.Child1 button {
+.child1_button {
     height: fit-content;
     padding: 30px;
     border: 2px solid rosybrown;
@@ -16,9 +16,10 @@
     font-size: larger;
     cursor: pointer;
     color: darkgoldenrod;
+    width: 350px;
 }
 
-.Child1 input {
+.child1_input {
     padding: 30px;
     width: 550px;
     border-radius: 12px;

@@ -1,4 +1,4 @@
-import { NewNoteInput } from '../AddReview'
+import { NewReview } from '../AddReview'
 import './style.css'
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
@@ -13,7 +13,7 @@ export const CompanyReview = () => {
     }
     return (
         <div className="reviewPage">
-            <NewNoteInput addReview={onAddReview} />
+            <NewReview addReview={onAddReview} />
             <hr />
             <ul className="reviewList">
                 {

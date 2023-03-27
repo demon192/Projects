@@ -1,11 +1,11 @@
 import './style.css'
 import { ChangeEvent, useState } from "react";
 
-interface NewNoteInputProps {
+interface NewReviewInputProps {
     addReview(review: string): void;
 }
 
-export const NewNoteInput: React.FC<NewNoteInputProps> = ({ addReview }) => {
+export const NewReview: React.FC<NewReviewInputProps> = ({ addReview }) => {
     const [review, setreview] = useState("")
     const updateReview = (e: ChangeEvent<HTMLInputElement>) => {
         setreview(e.target.value)

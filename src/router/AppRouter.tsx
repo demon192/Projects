@@ -20,6 +20,7 @@ const AppRouter = () => {
             <Route path='/phonepe' Component={Phonepe} />
             <Route path='/simplePage' Component={SimplePage} />
             <Route path='/hotelPage' Component={HotelPage} />
+            {/* <Route path='/loginData' Component={LoginDatabase} /> */}
             <Route path='/getStarted' Component={ApiData} />
         </Routes>
 

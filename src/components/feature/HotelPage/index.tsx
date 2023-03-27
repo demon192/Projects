@@ -1,6 +1,29 @@
+import { ChangeEvent, useState } from 'react';
 import './style.css'
 
 const HotelPage = () => {
+    const [login, setLogin] = useState({
+        email: "", password: ""
+    });
+
+    const [loginStatus, setLoginStatus] = useState(false);
+
+    let name, value;
+
+    const handleLoginForm = (e: ChangeEvent<HTMLInputElement>) => {
+
+        name = e.target.name;
+        value = e.target.value;
+        setLogin({ ...login, [name]: value });
+    }
+
+    const saveLoginDetails = (e: React.MouseEvent<HTMLButtonElement>) => {
+        if (login.email.length > 0 && login.password.length > 0) {
+            setLoginStatus(!loginStatus);
+            console.log(login);
+        }
+    }
+
     return (
         <div className="hotel_page">
             <div className="hotel_page_left">
@@ -13,16 +36,15 @@ const HotelPage = () => {
                     <br /><br />
                     <form action="">
                         <p>Email Address</p>
-                        <input type="email" name="email" className="hotel_page_left__form__email" />
+                        <input name="email" value={login.email} onChange={handleLoginForm} type="email" className="hotel_page_left__form__email" />
                         <br /><br /><br /><br />
                         <p>Password</p>
-                        <input type="password" name="password" className="hotel_page_left__form__password" />
+                        <input name="password" value={login.password} onChange={handleLoginForm} type="password" className="hotel_page_left__form__password" />
                         <span className="material-symbols-outlined password_eye">visibility_off </span>
                         <br /><br /><br />
                         <a href="#" className="hotel_page_left__form__link">Forgot Password?</a>
                         <br /><br /><br />
-
-                        <input type="submit" value="Login" className="hotel_page_left__form__submit" />
+                        <button className="hotel_page_left__form__submit" onClick={saveLoginDetails}>Login</button>
                     </form>
                 </div>
                 <div className="hotel_page_left__icon2">
